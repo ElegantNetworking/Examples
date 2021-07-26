@@ -72,14 +72,14 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 repositories {
     maven {
         name = "Snapshot repo"
-        url = "https://oss.sonatype.org/service/local/repositories/iogitlabhohserg-1051/content/"
+        url = "https://oss.sonatype.org/service/local/repositories/iogitlabhohserg-1052/content/"
     }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.1.24'
 
-    implementation "io.gitlab.hohserg.elegant.networking:elegant-networking-1.16:3.10"
+    implementation fg.deobf("io.gitlab.hohserg.elegant.networking:elegant-networking-1.16:3.10")
     compileOnly "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
     annotationProcessor "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
     

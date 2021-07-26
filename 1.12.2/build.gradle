@@ -59,7 +59,7 @@ repositories {
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2855'
 
-    implementation "io.gitlab.hohserg.elegant.networking:elegant-networking-1.12:3.10"
+    implementation fg.deobf("io.gitlab.hohserg.elegant.networking:elegant-networking-1.12:3.10")
     compileOnly "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
     annotationProcessor "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
 
