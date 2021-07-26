@@ -3,7 +3,6 @@ package com.example.examplemod.network;
 import hohserg.elegant.networking.api.ClientToServerPacket;
 import hohserg.elegant.networking.api.ElegantPacket;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraftforge.fml.DistExecutor;
 
 @ElegantPacket
 public class ExamplePacket1 implements ClientToServerPacket {
