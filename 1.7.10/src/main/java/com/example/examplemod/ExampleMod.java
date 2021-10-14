@@ -1,10 +1,9 @@
 package com.example.examplemod;
 
-import com.example.examplemod.network.ExamplePacket1;
+import com.example.examplemod.network.BugTest;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.InputEvent;
-import net.minecraft.init.Blocks;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -37,7 +36,8 @@ public class ExampleMod {
     public void onKeyPressed(InputEvent.KeyInputEvent event) {
         for (int key : keys)
             if (Keyboard.isKeyDown(key)) {
-                new ExamplePacket1(key).sendToServer();
+                new BugTest(new String(new char[1000]).replace("\0", "a")).sendToServer();
+                //new ExamplePacket1(key).sendToServer();
                 return;
             }
     }
