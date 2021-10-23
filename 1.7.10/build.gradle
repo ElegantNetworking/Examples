@@ -40,15 +40,15 @@ minecraft {
 repositories {
     maven {
         name = "Snapshot repo"
-        url = "https://oss.sonatype.org/service/local/repositories/iogitlabhohserg-1051/content/"
+        url = "https://oss.sonatype.org/service/local/repositories/iogitlabhohserg-1069/content/"
     }
 }
 
 dependencies {
     
-    implementation "io.gitlab.hohserg.elegant.networking:elegant-networking-1.7.10:3.10"
-    compileOnly "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
-    annotationProcessor "io.gitlab.hohserg.elegant.networking:annotation-processor:3.10"
+    implementation "io.gitlab.hohserg.elegant.networking:elegant-networking-1.7.10:3.14"
+    compileOnly "io.gitlab.hohserg.elegant.networking:annotation-processor:3.14"
+    annotationProcessor "io.gitlab.hohserg.elegant.networking:annotation-processor:3.14"
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
